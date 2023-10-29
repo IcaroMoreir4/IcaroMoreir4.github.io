@@ -1,0 +1,115 @@
+footer{
+    background-color: #000;
+}
+
+.footer-container{
+    max-width: 1200px;
+    padding: 120px 20px 60px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.footer-texto{
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color: #ccc;
+}
+
+.footer-contato li{
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.footer-contato a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.footer-contato a:hover{
+    transform: scale(1.1);
+    color: #ccc;
+}
+
+.footer-copy{
+    grid-column: 1 / span 2;
+    text-align: center;
+    font-size: 1.125rem;
+    color: #8f8f8f;
+}
+
+.footer .email{
+    position: relative;
+}
+
+.footer .email::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 12px;
+    background: url("/img/email.svg") no-repeat center center;
+    left: -30px;
+    top: 15px;
+}
+
+.footer .telefone{
+    position: relative;
+}
+
+.footer .telefone::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: url("/img/telefone.svg") no-repeat center center;
+    left: -30px;
+    top: 15px;
+}
+
+.footer .linkedin{
+    position: relative;
+}
+
+.footer .linkedin::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: url("/img/linkedin.svg") no-repeat center center;
+    left: -30px;
+    top: 15px;
+}
+
+.github{
+    position: relative;
+}
+
+.footer .github::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: url("/img/github.svg") no-repeat center center;
+    left: -30px;
+    top: 15px;
+}
+
+@media (max-width: 800px){
+    .footer-container{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .footer-contato li{
+        font-size: 1.5rem;
+    }
+}

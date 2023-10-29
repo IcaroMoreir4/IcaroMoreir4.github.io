@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+.intoducao{
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.intoducao h1{
+    font-size: 4.5rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+    font-family: 'Carter One', sans-serif;
+    position: relative;
+}
+
+.intoducao h1::before{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 5px;
+    background-image: url('/img/detalhe-titulo.svg');
+    position: absolute;
+    top: 63px;
+    left: -33px;
+}
+
+.intoducao p{
+    color: #525252;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+@media (max-width: 1000px){
+    .intoducao h1{
+        font-size: 3rem;
+    }
+
+    .intoducao h1::before{
+        width: 20px;
+        height: 4px;
+        top: 40px;
+        left: -30px;
+    }
+
+    .intoducao p{
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 800px){
+    .intoducao{
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    .intoducao h1{
+        font-size: 2.8rem;
+    }
+    .intoducao h1::before{
+        top: 45px;
+        left: -20px;
+        width: 4px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 400px){
+    .intoducao{
+        grid-template-columns: 1fr;
+    }
+    .intoducao h1{
+        font-size: 2.5rem;
+    }
+
+    .intoducao img{
+        display: none;
+    }
+
+    .intoducao h1::before{
+        top: 45px;
+        left: -13px;
+        width: 4px;
+        height: 20px;
+    }
+
+    .intoducao p{
+        font-size: 1rem;
+    }
+}

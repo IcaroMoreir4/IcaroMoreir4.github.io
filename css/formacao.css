@@ -1,0 +1,78 @@
+.formacao{
+    background-color: #141414;
+    color: #fff;
+}
+
+.formacao-container{
+    max-width: 1200px;
+    padding: 120px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+
+.formacao .subtitulo{
+    color: #000;
+    max-width: 5ch;
+}
+
+.formcao-texto{
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 40ch;
+    margin-bottom: 60px;
+    color: #A3A3A3;
+}
+
+.formcao-texto strong{
+    color: #fff;
+}
+
+
+.formacao-extra h3{
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #8f8f8f;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.formacao-extra h3::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 18px;
+    background: url("/img/idiomas.svg") no-repeat center center;
+    position: absolute;
+    left: -30px;
+}
+
+.formacao-extra li{
+    font-size: 1.125rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.formacao-extra span{
+    color: #8f8f8f;
+}
+
+@media (max-width: 800px){
+    .formacao-container{
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+        gap: 40px;
+    }
+    .formacao .subtitulo{
+        color: #fff;
+    }
+    .formcao-texto{
+        font-size: 1.25rem;
+    }
+    .formacao-extra h3::before{
+        position: initial;
+        margin-bottom: 10px;
+    }
+}

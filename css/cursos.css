@@ -1,0 +1,98 @@
+.cursos{
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+
+.cursos .subtitulo{
+    color: #CCCCCC;
+    grid-column: 1;
+    grid-row: 1 / span 3;
+}
+
+.cursos-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background-color: #F5F5F5;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    position: relative;
+    gap: 10px 20px;
+}
+
+.cursos-item::before{
+    content: '';
+    display: block;
+    height: 20px;
+    width: 4px;
+    position: absolute;
+    background-image: url('/img/detalhe-titulo.svg');
+    top: 22px;
+    left: -4px;
+}
+
+.cursos-item_ano{
+    position: absolute;
+    top: 22px;
+    left: -100px;
+    color: #666666;
+    font-size: 0.875rem;
+    width: 80px;
+    text-align: right;
+}
+
+.cursos-item_titulo{
+    font-size: 1.125rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.cursos-item_texto{
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #666666;
+}
+
+.cursos-item_habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: start;
+    max-width: 20ch;
+}
+
+.cursos-item_habilidades li{
+    font-size: 0.875rem;
+    line-height: 1.4;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 5px 10px;
+}
+
+@media (max-width: 800px){
+    .cursos{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .cursos .subtitulo{
+        color: #141414;
+    }
+    .cursos-item_ano{
+        position: initial;
+        order: 1;
+        width: initial;
+        text-align: left;
+    }
+    .cursos-item_ano::before{
+        content: "Ano: ";
+    }
+}
+@media (max-width: 400px){
+    .cursos-item{
+        grid-template-columns: 1fr;
+    }
+}
