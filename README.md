@@ -11,10 +11,6 @@ Este é o meu primeiro portfólio, criado após concluir um curso da Origamid. O
 - Figma (para prototipagem)
 - Visual Studio Code (para desenvolvimento)
 
-## Acesso ao Portfólio
-
-Você pode acessar o meu portfólio diretamente no GitHub: [Portfólio de IcaroMoreir4](https://github.com/IcaroMoreir4/IcaroMoreir4.github.io)
-
 ## Contribuição
 
 Se desejar, você pode fornecer feedback ou sugestões para melhorias no projeto.
