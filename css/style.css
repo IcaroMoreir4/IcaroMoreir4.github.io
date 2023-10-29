@@ -1,6 +1,6 @@
-@import '/css/global.css';
-@import '/css/header.css';
-@import '/css/intoducao.css';
-@import '/css/cursos.css';
-@import '/css/formacao.css';
-@import '/css/footer.css';
+@import 'global.css';
+@import 'header.css';
+@import 'intoducao.css';
+@import 'cursos.css';
+@import 'formacao.css';
+@import 'footer.css';
