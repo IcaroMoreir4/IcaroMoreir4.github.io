@@ -19,6 +19,7 @@ Se desejar, você pode fornecer feedback ou sugestões para melhorias no projeto
 
 Você pode me encontrar nas seguintes redes sociais:
 - [LinkedIn](https://www.linkedin.com/in/icaro-moreira91/)
+- [Portifolio](https://icaromoreir4.github.io/)
 
 ## Licença
 
